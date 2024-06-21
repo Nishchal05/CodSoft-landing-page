@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    padding-left:30px ;
+    padding-right: 30px;
+    box-shadow: 3px 3px lightgrey, -1em 0 .4em lightgray;
+    position: sticky;
+    z-index: 1;
+}
+.nav-content ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-content ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-content ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.nav-content ul li:hover{
+    opacity: 0.5;
+}
+.codsoft-globe{
+    height: 100vh;
+}
+.Codsoft-slogan{
+    z-index: 3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 290px;
+    left: 30px;
+    font-size: 2rem;
+}
+.codsoft-intern{
+    margin-top: 20px;
+    border: 1px solid #00e676;
+    padding: 10px;
+    border-radius: 27px;
+}
+.codsoft-intro{
+    display: flex;
+    margin-top: 10px;
+}
+.codsoft-intro h3{
+    font-size: 1.9rem;
+    margin-right: 10px;
+}
+.codsoft-intro h3 p{
+    font-size: 1rem;
+}
+.intro{
+    padding: 180px 50px;
+    display: flex;
+}
+.intro div img{
+    position: relative;
+    top: -49px;
+}
+.codsoft-intoduction{
+    font-size: 3rem;
+}
+.codsoft-web{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    padding: 0px 10px;
+    gap: 30px;
+
+}
+.codsoft-info{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.codsoft-info h1{
+    font-size: 2rem;
+}
+.codsoft-services{
+    font-size: 2.6rem;
+}
+.codsoft-business, .codsoft-growth,.contact{
+    margin-top: 40px;
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.codsoft-growthinfo{
+    width: 35%;
+}
+.growth-status{
+    display: flex;
+    gap: 70px;
+    margin-top: 100px;
+    color:gray;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#contact h1{
+    font-size: 2.3rem;
+}
+form button{
+    margin-top: 9px;
+    background-color: green;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    position: relative;
+    left:56px;
+}
+.codsoft-footer{
+    display: flex;
+   gap: 100px;
+}
+footer{
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: black;
+    color: white;
+}
+.links{
+    margin-top: 50px;
+}
+.contact-link{
+    font-size: 1.3rem;
+}
+.mobile-bar{
+    display: none;
+}
+@media (max-width: 1050px) {
+    .mobile-bar{
+        display: flex;
+        font-size: 1.6rem;
+    }
+    .nav-content{
+        display: none;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .intro-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .codsoft-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
